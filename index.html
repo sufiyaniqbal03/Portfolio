@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="docTitle"></title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header style="width: 100%;">
+        <div class="h">
+            <div class="navbar">
+                <div class="left_bar">
+                    <div class="one">
+                    </div>
+                    <div class="one">
+                    </div>
+                </div>
+                <div class="right_bar">
+                    <button id="contact_btn" onclick="btn_clicked(this.id)">Contact Me <img src="./images/person.svg" class="contact_img" alt="(::)"></button>
+                </div>
+                <div class="menu">
+                    <img onclick="showMenu()" class="menu_btn" src="./images/menu.svg" alt="Menu..">
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu_header">
+            <span id="menu_part1_head">Navigation</span>
+            <div class="menu_fragments_part1">
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/house.svg" alt="(::)">
+                    <a class="anchor" href="#">Home</a> 
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/fire.svg" alt="(::)">
+                    <a class="anchor" href="#">Trending</a> 
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/braces.svg" alt="(::)">
+                    <a class="anchor" href="#">Snippets</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/camera-reels.svg" alt="(::)">
+                    <a class="anchor" href="#">Videos</a>
+                </span>
+            </div>
+    
+            
+            <span id="menu_part2_head">Socials</span>
+            <div class="menu_fragments_part2">
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/instagram.svg" alt="(::)">
+                    <a class="anchor" target="_blank">Instagram</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/github.svg" alt="(::)">
+                    <a class="anchor" href="https://github.com/sufiyaniqbal03" target="_blank">GitHub</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/linkedin.svg" alt="(::)">
+                    <a class="anchor" href="https://www.linkedin.com/in/sufiyan-iqbal-73954a205/" target="_blank">Linkedin</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/youtube.svg" alt="(::)">
+                    <a class="anchor" href="https://youtu.be/iXgXNi-AbbM?si=jgOsmyYpRMyrTnYP" target="_blank">Youtube</a>
+                </span>
+    
+                <span class="part1_cont">
+                    <img class="part1_image" src="./images/person2.svg" alt="(::)">
+                    <a class="anchor" href="#">Profile</a>
+                </span>
+    
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="left_nav">
+        <div class="fragments_part1">
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/house.svg" alt="(::)">
+                <a class="anchor" href="#">Home</a> 
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/fire.svg" alt="(::)">
+                <a class="anchor" href="#">Trending</a> 
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/braces.svg" alt="(::)">
+                <a class="anchor" href="#">Snippets</a>
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/camera-reels.svg" alt="(::)">
+                <a class="anchor" href="#">Videos</a>
+            </span>
+        </div>
+
+        <span id="part2_head">Socials</span>
+
+        <div class="fragments_part2">
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/instagram.svg" alt="(::)">
+                <a class="anchor"  target="_blank">Instagram</a>
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/github.svg" alt="(::)">
+                <a class="anchor" href="https://github.com/sufiyaniqbal03" target="_blank">GitHub</a>
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/linkedin.svg" alt="(::)">
+                <a class="anchor" href="https://www.linkedin.com/in/sufiyan-iqbal-73954a205/" target="_blank">Linkedin</a>
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/youtube.svg" alt="(::)">
+                <a class="anchor" href="https://youtu.be/iXgXNi-AbbM?si=jgOsmyYpRMyrTnYP" target="_blank">Youtube</a>
+            </span>
+
+            <span class="part1_cont">
+                <img class="part1_image" src="./images/person2.svg" alt="(::)">
+                <a class="anchor" href="#">Profile</a>
+            </span>
+
+        </div>
+    </div>
+    
+    <div class="profile_container">
+        <div class="profile_section">
+            <div class="profile_content">
+                <div class="profile_img">
+                    <img class="profile_pic" src="./images/pic_Profile.jpeg" height=90 width=90 alt="...">
+                </div>
+                <div class="profile_name">
+                    <span  id="naam">Sufiyan Iqbal</span>
+                    <span class="name">@BackendDev
+                        <button class="insta_btn" id="btn_insta_logo" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."></button>
+                    </span>
+                </div>
+            </div>
+                <div class="instagram_btn">
+                        <button class="insta_btn" onclick="follow_on_insta()"><img src="./images/insta.svg" alt="..."> Follow me on Instagram</button>
+                </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="projects_container">
+            <h3 id="project_name">Projects</h3>
+            <div class="project_items">
+                
+                        <div class="card" id="Memo_AI" onclick="open_projects(this.id)">
+                            <div class="card_img_container">
+                                <img class="card_img" src="images/topfan.png" alt="Loading...">
+                            </div>
+                            <div class="card_content">
+                                <h3 class="project_name">Top Fan elite</h3>
+                                <span class="project_requ">DynamoDB, Elastic-search, aws-lambda, Nodejs, restful api, JavaScript</span>
+                            </div>
+                        </div>
+         
+                
+               
+                    <div class="card" id="paint_app" onclick="open_projects(this.id)">
+                        <div class="card_img_container">
+                            <img class="card_img" src="images/kenyaLogo.jpeg" alt="Loading...">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="project_name">PDSL</h3>
+                            <span class="project_requ">Nodejs, RabbitMQ, PostgreSQL, SQL, Nodejs, js(kenya govt project)</span>
+                        </div>
+                    </div>
+     
+              
+                    <div class="card" id="calc" onclick="open_projects(this.id)">
+                        <div class="card_img_container">
+                            <img class="card_img" src="images/sherpas.png" alt="Loading...">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="project_name">Sherpas feedback</h3>
+                            <span class="project_requ">Nodejs, PostgreSQL, SQL, rest API</span>
+                        </div>
+                    </div>
+           
+                
+        
+                    <div class="card" id="e_comm" onclick="open_projects(this.id)">
+                        <div class="card_img_container">
+                            <img class="card_img" src="./images/ecommerce.jpeg" alt="Loading...">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="project_name">E-Comm_Kart</h3>
+                            <span class="project_requ">Nodejs, JavaScript, DynamoDB, PostgreSQL, SQL</span>
+                        </div>
+                    </div>
+                       
+            </div>
+        </div>
+
+        <div class="skills_container">
+            <div>
+                <h3 id="skills_heading">What I Know</h3>
+
+                <div class="skills_items">
+                    <div class="skills_card">
+                        <h3 class="skills_tagname">Backend</h3>
+                        <div class="items">
+                            <span id="br-green">JavaScript</span>
+                            <span id="br-blue">Node JS</span>
+                            <span id="br-red">Express JS</span>
+                            <span id="br-red">RabbitMQ</span>
+                            <span id="br-red">Micro Services</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills_card">
+                        <h3 class="skills_tagname">Database</h3>
+                        <div class="items">
+                            <span id="br-yellow">PostgreSQL</span>
+                            <span id="br-purple">DynamoDB</span>
+                            <span id="br-purple">My SQL</span>
+                        </div>
+                    </div>
+                    <div class="skills_card">
+                        <h3 class="skills_tagname">Version control</h3>
+                        <div class="items">
+                            <span id="br-yellow">Git & Github</span>
+                            <span id="br-yellow">Bit bucket</span>
+                            
+                        </div>
+                    </div>
+                    <div class="skills_card">
+                        <h3 class="skills_tagname">Query language & devops</h3>
+                        <div class="items">
+                            <span id="br-yellow">SQL</span>
+                            <span id="br-yellow">Knex</span>
+                            <span id="br-yellow">aws-lambda</span>
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>   
+
+                <!-- <div class="more-projects_container">
+                    <h3 id="more_pro_head">More projects</h3>
+                    <div class="list_more_pro">
+                        <div class="list_item" id="todo" onclick="open_projects(this.id)">
+                            <img src="./images/check2-circle.svg" alt="...">
+                            
+                            <div class="list_item_details">
+                                <span class="list_name">ToDo List App</span>
+                                <span class="list_desc">Kotlin, Android Studio, google, GfG</span>
+                            </div>
+                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                        </div>
+                        <div class="list_item" id="temp_cnvrt" onclick="open_projects(this.id)">
+                            <img src="./images/thermometer.svg" alt="...">
+                            
+                            <div class="list_item_details">
+                                <span class="list_name">Temperature Converter</span>
+                                <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
+                            </div>
+                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                        </div>
+                        <div class="list_item" id="TTT" onclick="open_projects(this.id)">
+                            <img src="./images/grid-3x3.svg" alt="...">
+                            
+                            <div class="list_item_details">
+                                <span class="list_name">Tic Tac Toe Game</span>
+                                <span class="list_desc">Kotlin, Android Studio, Mathematics</span>
+                            </div>
+                            <img src="./images/arrow-right-circle-fill.svg" alt="...">
+                        </div>
+
+                        <div class="list_item" id="github" onclick="open_platforms(this.id)">
+
+                            <img src="./images/github.svg" alt="...">
+                            
+                            <div class="list_item_details">
+                                <span class="list_name">See Github For more Projects....</span>
+                                <span class="list_desc"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>        -->
+        </div>
+
+
+
+        <div class="other_profiles">
+            <h3 id="other">Other Platforms & Resume</h3>
+            <div class="other_container">
+
+                <div class="card_other" id="leet_code" onclick="open_platforms(this.id)">
+                    <div class="other_card_img">
+                        <img src="./images/leetcode.svg" alt="...">
+                    </div>
+                    <div class="other_title">
+                        <span class="platform">Leetcode</span>
+                    </div>
+                </div>
+                
+                <!-- <div class="card_other" id="gfg" onclick="open_platforms(this.id)">
+                    <div class="other_card_img">
+                        <img src="./images/gfg.svg  " alt="...">
+                    </div>
+                    <div class="other_title">
+                        <span class="platform">Geeks For Geeks</span>
+                    </div>
+                </div> -->
+
+                <!-- <div class="card_other" id="hrank" onclick="open_platforms(this.id)">
+                    <div class="other_card_img">
+                        <img src="./images/hackerrank.svg" alt="...">
+                    </div>
+                    <div class="other_title">
+                        <span class="platform">Hacker Rank</span>
+                    </div>
+                </div> -->
+
+                <div class="card_other" id="resume">
+                    <div class="other_card_img">
+                        <img class="resume_img" src="./images/newspaper.svg" alt="...Resume">
+                    </div>
+                    <div class="download_btn">
+                        <button  onclick="download_resume()" class="resume_btn">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+</body>
+<script src="./js/main.js"></script>
+</html>
