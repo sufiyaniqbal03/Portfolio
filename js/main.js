@@ -14,7 +14,7 @@ function btn_clicked(btn_id){
 
 
 function follow_on_insta(){
-    window.open("https://www.instagram.com/01_vishal_sharma_01/","_blank")
+    window.open("https://www.instagram.com","_blank")
 }
 function open_projects(project_id){
     if(project_id == "Memo_AI"){
@@ -22,21 +22,6 @@ function open_projects(project_id){
     }
     else if(project_id =="paint_app"){
         window.open("https://customer-dev.pdslkenya.com/","_blank")
-    }
-    else if(project_id == "calc"){
-        window.open("https://github.com/1234vishalsharma/Oasis-Infobyte/tree/main/My_calculator","_blank")
-    }
-    else if(project_id == "e_comm"){
-        window.open("https://github.com/1234vishalsharma/E_commerce_APP","_blank")
-    }
-    else if(project_id=="temp_cnvrt"){
-        window.open("https://github.com/1234vishalsharma/Bharat-Intern-Task/tree/main/TempCnvrt","_blank")
-    }
-    else if(project_id == "TTT"){
-        window.open("https://github.com/1234vishalsharma/CodeClause-Internship-Task/tree/main/ZERO_KATA","_blank")
-    }
-    else if(project_id == "todo"){
-        window.open("https://github.com/1234vishalsharma/Oasis-Infobyte/tree/main/Todolist","_blank")
     }
     else if(project_id == "FShare"){
         window.open("https://f-share.netlify.app/","_blank")
